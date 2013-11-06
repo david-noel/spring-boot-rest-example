@@ -24,6 +24,4 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind'
 }
 
-task stage << {
-    dependsOn build
-}
+task stage(dependsOn: build)
