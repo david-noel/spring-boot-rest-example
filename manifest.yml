@@ -1,0 +1,9 @@
+---
+applications:
+- name: boot
+  memory: 512M
+  instances: 1
+  host: boot
+  domain: cfapps.io
+  path: build/libs/spring-boot-rest-example.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack
